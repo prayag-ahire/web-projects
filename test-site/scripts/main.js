@@ -22,7 +22,7 @@ let myImg =  document.querySelector("img");
 myImg.onclick = () => {
     const mysrc = myImg.getAttribute("src");
     if(mysrc === "https://imgix.ranker.com/list_img_v2/18411/518411/original/my-top-10-favorite-anime-characters-u2?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720"){
-        myImg.setAttribute("src","images/img2.png");
+        myImg.setAttribute("src","https://www.comingsoon.net/wp-content/uploads/sites/3/2023/09/Solo-Leveling.jpg");
     }
     else{
         myImg.setAttribute("src","https://imgix.ranker.com/list_img_v2/18411/518411/original/my-top-10-favorite-anime-characters-u2?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720");
