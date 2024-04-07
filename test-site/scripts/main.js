@@ -34,8 +34,9 @@ myImg.onclick = () => {
 let myButton = document.querySelector("button");
 let myHanding = document.querySelector("h1");
 
+let myName;
 function setUserName(){
-    let myName = prompt("Enter your name.");
+    myName = prompt("Enter your name.");
     console.log(myName);
     if(!myName){
         setUserName();
@@ -58,4 +59,15 @@ myButton.onclick = () =>{
 setUserName();
 }
 
+document.addEventListener("DOMContentLoaded",()=>{
+function paragraph(){
+    const para = document.createElement("p");
+    para.textContent = `hello ${myName} thank you for providing your name.`
+    document.body.appendChild(para);
+}
 
+const buttons = document.querySelectorAll("button");
+for(const button of buttons){
+    button.addEventListener("click",paragraph);
+}
+});
