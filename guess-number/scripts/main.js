@@ -1,7 +1,20 @@
+let ans = prompt("Enter your name !!");
 let mybutton = document.querySelector("button");
+const title = document.querySelector("h1");
 mybutton.onclick = ()=>{
-    const title = document.querySelector("h1");
-    title.textContent = `This is me like it`;
+
+    if(title.textContent == `This is right bro click again`){
+        
+        title.textContent = `This is me ${ans}, you have to click bro`;
+    }
+    else{
+        title.textContent = `This is right bro click again`;
+    }
 }
-document.addEventListener("DOMContentLoaded",()=>{
-})
+
+addEventListener("keypress",event);
+
+function event(e){
+    console.log(e.code);
+}
+
